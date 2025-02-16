@@ -13,14 +13,23 @@ const MainPageStyle = styled.div`
   height: 100%;
 `;
 
+const Container = styled.div`
+  text-align: center;
+`;
+
 function MainPage() {
   return (
     <DisplayStyle>
+      <Container>
+      </Container>
+
       <MainPageStyle>
         <TextLine isMine={true}></TextLine>
         <TextLine isMine={false}></TextLine>
       </MainPageStyle>
+      
     </DisplayStyle>
+
   );
 }
 
