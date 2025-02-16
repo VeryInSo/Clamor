@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
+const HeaderContainer = styled.header`
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+`;
+
 function Header() {
-    return (
-      <div style={{ textAlign: "center" }}>
-            <header style={{ backgroundColor: "#333", color: "white", padding: "20px", fontSize: "24px", fontWeight: "bold" }}>
-                CLAMOR
-            </header>
-        </div>
-    )
-  }
-  
-  export default Header;
-  
+  return <HeaderContainer>CLAMOR</HeaderContainer>;
+}
+
+export default Header;
