@@ -2,17 +2,17 @@ import styled from 'styled-components';
 
 const TextBoxStyle = styled.div`
   width: 200px;
-  height: 50px;
+  height: 100px;
   border: 1px solid black;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-function TextBox({children}: { children: React.ReactNode }) {
+function TextBox({ children }: { children: React.ReactNode }) {
   return (
     <TextBoxStyle>
-      <p>{ children }</p>
+      <p>{children}</p>
     </TextBoxStyle>
   );
 }
